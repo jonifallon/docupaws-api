@@ -1,4 +1,4 @@
-class IssuesController < ApplicationController
+class IssuesController < OpenReadController
   before_action :set_issue, only: [:show, :update, :destroy]
 
   # GET /issues
@@ -15,7 +15,7 @@ class IssuesController < ApplicationController
 
   # POST /issues
   def create
-    @issue = Issue.new(issue_params)
+    @issue = current_user.issues.build(issue_params)
 
     if @issue.save
       render json: @issue, status: :created, location: @issue

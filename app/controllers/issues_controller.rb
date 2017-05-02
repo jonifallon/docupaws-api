@@ -42,7 +42,6 @@ class IssuesController < OpenReadController
     # Use callbacks to share common setup or constraints between actions.
     def set_issue
       @issue = current_user.issues.find(params[:id])
-      # @issue = Issue.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

@@ -8,6 +8,12 @@ class IssuesController < OpenReadController
     render json: @issues
   end
 
+  def myissues
+    @issues = current_user.issues
+
+    render json: @issues
+  end
+
   # GET /issues/1
   def show
     render json: @issue

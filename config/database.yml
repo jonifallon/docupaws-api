@@ -1,4 +1,4 @@
-<% project_name = 'issues_db' %>
+<% project_name = 'pets_db' %>
 
 default: &default
   adapter: postgresql

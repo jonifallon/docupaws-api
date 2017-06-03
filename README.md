@@ -21,10 +21,10 @@ The ERD for the scope of Project II is fairly straightforward; two tables with a
 
 ,,,
 
-ADMINSTRATORS            ISSUES
+ADMINSTRATORS            PETS
 PK ID                    PK ID
 email					           Product
-						             Issue Description
+						             Pet Description
 						             Notes
 						             FK Administrators ID
 
@@ -35,7 +35,7 @@ ________________________________
 
 The links to my sites are:
 
-https://jonifallon.github.io/issues_client/   
+https://jonifallon.github.io/issues_client/
 
 
 https://shrouded-beach-65904.herokuapp.com/

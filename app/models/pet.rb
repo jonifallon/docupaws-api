@@ -1,4 +1,4 @@
-class Issue < ApplicationRecord
+class Pet < ApplicationRecord
   belongs_to :user
 
   validates :user, presence: true

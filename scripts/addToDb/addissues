@@ -1,4 +1,4 @@
-INSERT INTO issues(user_id, product, description, notes) VALUES
+INSERT INTO pets(user_id, product, description, notes) VALUES
   (1, 'Corporate Email System', 'Outage affecting all users', 'Technicians are currently troubleshooting.'),
   (1, 'Proxy errors with external sites', 'Proxy server outage is causing proxy errors.', 'Temporary workaround:  Close all browser sessions and relaunch.')
   ;

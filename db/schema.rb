@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.integer  "user_id",    null: false
     t.string   "name"
     t.string   "shots"
+    t.string   "dob"
     t.string   "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

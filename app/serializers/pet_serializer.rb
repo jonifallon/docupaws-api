@@ -1,3 +1,3 @@
 class PetSerializer < ActiveModel::Serializer
-  attributes :id, :product, :description, :notes
+  attributes :id, :name, :shots, :notes
 end

@@ -7,8 +7,8 @@ The backend is built on Rails.
 
 ## URLs
 
--   Front End Repo: xxxxx
--   Back End Repo: xxxxx
+-   Front End Repo: https://github.com/jonifallon/docupaws-client
+-   Back End Repo: https://github.com/jonifallon/docupaws-api
 -   Deployed Front End Client: xxxx
 -   Heroku Site: xxxx
 

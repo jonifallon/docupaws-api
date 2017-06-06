@@ -52,6 +52,6 @@ class PetsController < OpenReadController
 
     # Only allow a trusted parameter "white list" through.
     def pet_params
-      params.require(:pet).permit(:name, :shots, :dob, :notes)
+      params.require(:pet).permit(:name, :shots, :dob, :species, :spayed, :gender, :breed, :color, :purchased, :microchip, :weight, :vet, :vetphone, :notes)
     end
 end

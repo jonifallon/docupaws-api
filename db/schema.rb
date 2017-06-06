@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.string   "name"
     t.string   "shots"
     t.string   "dob"
+    t.string   "species"
+    t.string   "spayed"
+    t.string   "gender"
+    t.string   "breed"
+    t.string   "color"
+    t.string   "purchased"
+    t.string   "microchip"
+    t.string   "weight"
+    t.string   "vet"
+    t.string   "vetphone"
     t.string   "notes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

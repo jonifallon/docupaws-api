@@ -11,8 +11,8 @@ Link to ERD: http://imgur.com/a/xAnQs
 
 -   Front End Repo: https://github.com/jonifallon/docupaws-client
 -   Back End Repo: https://github.com/jonifallon/docupaws-api
--   Deployed Front End Client: xxxx
--   Heroku Site: xxxx
+-   Deployed Front End Client: https://jonifallon.github.io/docupaws-client/
+-   Heroku Site: https://safe-mesa-23831.herokuapp.com/
 
 ## Resources
 
@@ -20,12 +20,8 @@ This project contains two resources:
 -   Users
 -   Pets
 
--   Prescriptions (may be added as stretch goal)
-
 A user can have many pets
 A pet can have only one owner (user)
-A pet can have many prescriptions
-A prescription can belong to only one pet (stretch goal)
 
 ### Pets
 
@@ -36,16 +32,6 @@ A prescription can belong to only one pet (stretch goal)
 | POST    | `/pets/`    | `pets#create`    |
 | PATCH   | `/pets/:id` | `pets#update`    |
 | DELETE  | `/pets/:id` | `pets#destroy`   |
-
-### Meds (Stretch goal - not yet developed)
-
-| Verb    | URI Pattern  | Controller#Action |
-|---------|--------------|-------------------|
-| GET     | `/meds`     | `meds#index`     |
-| GET     | `/meds/:id` | `meds#show`      |
-| POST    | `/meds/`    | `meds#create`    |
-| PATCH   | `/meds/:id` | `meds#update`    |
-| DELETE  | `/meds/:id` | `meds#destroy`   |
 
 
 ### Authentication
@@ -103,7 +89,6 @@ version of Rails 4, as well as track `master` branches for `rails-api` and
 
 I decided to use Rails because I know it works well for the project I'm submitting.  Adding and modifying resources is easily accomplished by making the changes and then dropping and readding the database using the command line.
 
-I'm initially meeting MVP with resources of User and Pet, but plan to add Prescriptions as an additional resource if possible prior to the deadline.
 
 ## Unsolved Problems
 

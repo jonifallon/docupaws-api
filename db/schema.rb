@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.index ["user_id"], name: "index_examples_on_user_id", using: :btree
   end
 
+  create_table "meds", force: :cascade do |t|
+    t.integer  "user_id",        null: false
+    t.string   "drugname"
+    t.string   "dosage"
+    t.string   "frequency"
+    t.string   "dateprescribed"
+    t.string   "notes"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["user_id"], name: "index_meds_on_user_id", using: :btree
+  end
+
   create_table "pets", force: :cascade do |t|
     t.integer  "user_id",    null: false
     t.string   "name"
@@ -44,18 +56,6 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.index ["user_id"], name: "index_pets_on_user_id", using: :btree
   end
 
-  create_table "meds", force: :cascade do |t|
-    t.integer  "user_id",    null: false
-    t.string   "drugname"
-    t.string   "dosage"
-    t.string   "frequency"
-    t.string   "dateprescribed"
-    t.string   "notes"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_meds_on_user_id", using: :btree
-  end
-
   create_table "users", force: :cascade do |t|
     t.string   "email",           null: false
     t.string   "token",           null: false
@@ -66,5 +66,5 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.index ["token"], name: "index_users_on_token", unique: true, using: :btree
   end
 
-  add_foreign_key "examples", "users", "pets", "meds"
+  add_foreign_key "examples", "users"
 end

@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20170503204038) do
     t.string   "gender"
     t.string   "breed"
     t.string   "color"
-    t.string   "purchased"
+    t.datetime   "purchased"
     t.string   "microchip"
     t.string   "weight"
     t.string   "vet"

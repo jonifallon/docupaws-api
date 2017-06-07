@@ -52,6 +52,6 @@ class MedsController < OpenReadController
 
     # Only allow a trusted parameter "white list" through.
     def med_params
-      params.require(:med).permit(:drugname, :dosage, :frequency, :dateprescribed, :notes)
+      params.require(:med).permit(:drugname, :dosage, :frequency, :dateprescribed, :notes, :pet_id)
     end
 end
